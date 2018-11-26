@@ -22,9 +22,9 @@ public class SecondInstance extends AbstractVerticle {
 				vertx.deployVerticle("chapter3.SensorData");
 				
 				JsonObject conf = new JsonObject();				
-				conf.put("port", "8081");
+				conf.put("port", 8081);
 				
-				vertx.deployVerticle("chapter.HttpServer", new DeploymentOptions().setConfig(conf));
+				vertx.deployVerticle("chapter3.HttpServer", new DeploymentOptions().setConfig(conf));
 				
 			}else {
 				logger.error("Could not start", ar.cause());
