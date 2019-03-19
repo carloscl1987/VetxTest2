@@ -8,8 +8,8 @@ import io.vertx.core.AbstractVerticle;
 import io.vertx.core.json.JsonObject;
 
 public class HeatSensor extends AbstractVerticle {
-	
-	private final Random random = new Random();
+	//Test	
+ 	private final Random random = new Random();
 	
 	private final String id = UUID.randomUUID().toString();
 	
